@@ -63,3 +63,17 @@ if optimal_route is None:
     print("No valid route exists from the start to the destination.")
 else:
     print("Optimal Route:", ' -> '.join(optimal_route))
+
+# OUTPUT:
+
+# Enter the start location: a
+# Enter the destination location: e
+# Enter the number of edges: 7
+# Enter edge 1 (node1 node2 weight): b c 4
+# Enter edge 2 (node1 node2 weight): c e 6
+# Enter edge 3 (node1 node2 weight): d e 4
+# Enter edge 4 (node1 node2 weight): b d 2
+# Enter edge 5 (node1 node2 weight): d c 5
+# Enter edge 6 (node1 node2 weight): a d 7
+# Enter edge 7 (node1 node2 weight): a b 3
+# Optimal Route: a -> b -> d -> e
