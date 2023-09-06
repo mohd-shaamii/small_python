@@ -51,17 +51,16 @@ if __name__ == "__main__":
     destination = input("Enter the destination node: ")
     dijsktra(graph, source, destination)
 """
-OUTPUT:
 Enter the number of edges: 7
-Enter edge 1 in the format 'node1 node2 weight': A B 3
-Enter edge 2 in the format 'node1 node2 weight': B C 4
-Enter edge 3 in the format 'node1 node2 weight': C E 6
-Enter edge 4 in the format 'node1 node2 weight': D E 4
-Enter edge 5 in the format 'node1 node2 weight': B D 2
-Enter edge 6 in the format 'node1 node2 weight': D C 5
-Enter edge 7 in the format 'node1 node2 weight': A D 7
-Enter the source node: A
-Enter the destination node: E
+Enter edge 1 in the format 'node1 node2 weight': a b 3
+Enter edge 2 in the format 'node1 node2 weight': b c 4
+Enter edge 3 in the format 'node1 node2 weight': c e 6
+Enter edge 4 in the format 'node1 node2 weight': d e 4
+Enter edge 5 in the format 'node1 node2 weight': b d 2
+Enter edge 6 in the format 'node1 node2 weight': d c 5
+Enter edge 7 in the format 'node1 node2 weight': a d 7
+Enter the source node: a
+Enter the destination node: e
 Shortest Distance: 9
-Shortest Path: ['A', 'B', 'D', 'E'] 
+Shortest Path: a -> b -> d -> e
 """
