@@ -28,7 +28,8 @@ def dijsktra(graph, src, dest):
         print("No path from {} to {}.".format(src, dest))
     else:
         print("Shortest Distance: " + str(node_data[dest]['cost']))
-        print("Shortest Path: " + str(node_data[dest]['pred'] + [dest]))
+        shortest_path = ' -> '.join(node_data[dest]['pred'] + [dest])
+        print("Shortest Path: " + shortest_path)
 
 if __name__ == "__main__":
     graph = {}
@@ -49,7 +50,6 @@ if __name__ == "__main__":
     source = input("Enter the source node: ")
     destination = input("Enter the destination node: ")
     dijsktra(graph, source, destination)
-
 """
 OUTPUT:
 Enter the number of edges: 7
